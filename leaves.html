@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhereWork - Leaves</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nixie+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/leaves.css">
+</head>
+<body>
+  <!-- Leaves Screen -->
+  <div class="leaves-screen">
+    
+    <!-- Top Navigation -->
+    <nav class="top-navigation" data-node-id="242:6024">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="https://www.figma.com/api/mcp/asset/133290d6-e0dd-45a8-a8bb-cc5284ebe6f4" alt="WhereWork Logo" width="32" height="30">
+        </div>
+        <div class="nav-tabs">
+          <a href="dashboard.html" class="nav-tab" data-node-id="I228:2968;140:2835">
+            <span>Dashboard</span>
+          </a>
+          <a href="leaves.html" class="nav-tab active" data-node-id="I228:2968;140:2836">
+            <span>Leaves</span>
+          </a>
+          <a href="rewards.html" class="nav-tab" data-node-id="I228:2968;140:2838">
+            <span>Rewards</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="btn-request-leave" id="requestLeaveBtn" data-node-id="I228:2968;165:2159">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2"/>
+            <path d="M12 8V16M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Request leave</span>
+        </button>
+        <div class="avatar" data-node-id="126:2645">
+          <span>JH</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- Page Header -->
+      <section class="page-header" data-node-id="242:6025">
+        <div class="page-header-content">
+          <div class="page-header-left" data-node-id="242:6026">
+            <h1 class="page-title" data-node-id="242:6027">Leaves</h1>
+            <p class="page-subtitle" data-node-id="242:6028">
+              Keep track of your time off and understand how it affects your hybrid work pattern.
+            </p>
+          </div>
+          <div class="page-header-right" data-node-id="242:6029">
+            <div class="time-location-card">
+              <div class="time-location-header" data-node-id="242:6030">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" data-node-id="242:6031">
+                  <circle cx="12" cy="12" r="10" stroke="#77689B" stroke-width="2"/>
+                  <path d="M12 6V12L16 14" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span data-node-id="242:6032">Currently in Bengaluru, India</span>
+              </div>
+              <div class="time-location-body" data-node-id="242:6033">
+                <div class="time" data-node-id="242:6034">10:00 AM</div>
+                <div class="date" data-node-id="242:6035">5 January 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Apply for a leave Section -->
+      <section class="apply-leave-section" data-node-id="242:6036">
+        <h2 class="section-title" data-node-id="242:6038">Apply for a leave</h2>
+        <div class="apply-leave-container" data-node-id="242:6039">
+          <div class="card leave-form-card" data-node-id="242:6040">
+            <form class="leave-fields" id="applyLeaveForm" data-node-id="242:7279">
+              
+              <!-- Leave Type Dropdown -->
+              <div class="form-field" data-node-id="242:7280">
+                <label class="form-label" for="applyLeaveType" data-node-id="I242:7280;4078:26878">
+                  Leave type
+                </label>
+                <div class="select-wrapper">
+                  <select class="form-select" id="applyLeaveType" name="leaveType" required>
+                    <option value="">Select leave type</option>
+                    <option value="casual">Casual</option>
+                    <option value="sick">Sick</option>
+                  </select>
+                  <svg class="select-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Date Fields -->
+              <div class="date-fields" data-node-id="242:7281">
+                <div class="form-field" data-node-id="242:7282">
+                  <label class="form-label" for="applyStartDate" data-node-id="I242:7282;4078:26878">
+                    Start date
+                  </label>
+                  <div class="select-wrapper date-input-wrapper">
+                    <input type="date" class="form-input date-input" placeholder="DD/MM/YY" id="applyStartDate" name="startDate" required>
+                    <svg class="date-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <rect x="3" y="4" width="14" height="14" rx="2" stroke="#2a2a2a" stroke-width="1.5"/>
+                      <path d="M3 8H17M7 2V6M13 2V6" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form-field" data-node-id="242:7283">
+                  <label class="form-label" for="applyEndDate" data-node-id="I242:7283;4078:26878">
+                    End date
+                  </label>
+                  <div class="select-wrapper date-input-wrapper">
+                    <input type="date" class="form-input date-input" placeholder="DD/MM/YY" id="applyEndDate" name="endDate" required>
+                    <svg class="date-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <rect x="3" y="4" width="14" height="14" rx="2" stroke="#2a2a2a" stroke-width="1.5"/>
+                      <path d="M3 8H17M7 2V6M13 2V6" stroke="#2a2a2a" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reason Textarea -->
+              <div class="form-field textarea-field" data-node-id="242:7284">
+                <label class="form-label" for="applyReason" data-node-id="I242:7284;4094:22082">
+                  Reason
+                </label>
+                <div class="textarea-wrapper">
+                  <textarea class="form-textarea" placeholder="Reason for leave" id="applyReason" name="reason" rows="4"></textarea>
+                  <div class="textarea-resize-handle"></div>
+                </div>
+              </div>
+
+              <!-- Form Buttons -->
+              <div class="form-buttons" data-node-id="242:7334">
+                <button type="button" class="btn btn-secondary" id="applyCancelBtn" data-node-id="242:7335">
+                  Cancel
+                </button>
+                <button type="submit" class="btn btn-primary" id="applySubmitBtn" data-node-id="242:7336">
+                  Request leave
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leave Balances Section -->
+      <section class="leave-balances-section" data-node-id="242:6044">
+        <h2 class="section-title" data-node-id="242:6046">Leave balances</h2>
+        <div class="leave-balances-grid" data-node-id="242:6047">
+          
+          <!-- Fixed Leave Card -->
+          <div class="card leave-balance-card" data-node-id="242:6048">
+            <h3 class="leave-type-title" data-node-id="242:6050">Fixed</h3>
+            <div class="leave-balance-stats" data-node-id="242:6051">
+              <div class="leave-stat-row" data-node-id="242:6052">
+                <span class="leave-stat-label" data-node-id="242:6053">Leaves used</span>
+                <span class="leave-stat-value" id="fixed-used">0 days</span>
+              </div>
+              <div class="leave-stat-row" data-node-id="242:6055">
+                <span class="leave-stat-label" data-node-id="242:6056">Leaves remaining</span>
+                <span class="leave-stat-value" id="fixed-remaining">21 days</span>
+              </div>
+              <div class="leave-divider" data-node-id="242:6058"></div>
+              <div class="leave-stat-row" data-node-id="242:6059">
+                <span class="leave-stat-label" data-node-id="242:6060">Total fixed leaves</span>
+                <span class="leave-stat-value" id="fixed-total">21 days</span>
+              </div>
+            </div>
+            <div class="leave-progress-bar" data-node-id="242:6062">
+              <div class="progress-bar-fill" style="width: 33.33%; background: #7BADA3;"></div>
+            </div>
+          </div>
+
+          <!-- Flexi Leave Card -->
+          <div class="card leave-balance-card" data-node-id="242:6067">
+            <h3 class="leave-type-title" data-node-id="242:6069">Flexi</h3>
+            <div class="leave-balance-stats" data-node-id="242:6070">
+              <div class="leave-stat-row" data-node-id="242:6071">
+                <span class="leave-stat-label" data-node-id="242:6072">Leaves used</span>
+                <span class="leave-stat-value" id="flexi-used">0 days</span>
+              </div>
+              <div class="leave-stat-row" data-node-id="242:6074">
+                <span class="leave-stat-label" data-node-id="242:6075">Leaves remaining</span>
+                <span class="leave-stat-value" id="flexi-remaining">6 days</span>
+              </div>
+              <div class="leave-divider" data-node-id="242:6077"></div>
+              <div class="leave-stat-row" data-node-id="242:6078">
+                <span class="leave-stat-label" data-node-id="242:6079">Total flexi leaves</span>
+                <span class="leave-stat-value" id="flexi-total">6 days</span>
+              </div>
+            </div>
+            <div class="leave-progress-bar" data-node-id="242:6081">
+              <div class="progress-bar-fill" style="width: 100%; background: #81A0D3;"></div>
+            </div>
+          </div>
+
+          <!-- Annual Leave Card -->
+          <div class="card leave-balance-card" data-node-id="242:6086">
+            <h3 class="leave-type-title" data-node-id="242:6088">Annual</h3>
+            <div class="leave-balance-stats" data-node-id="242:6089">
+              <div class="leave-stat-row" data-node-id="242:6090">
+                <span class="leave-stat-label" data-node-id="242:6091">Leaves used</span>
+                <span class="leave-stat-value" id="annual-used">0 days</span>
+              </div>
+              <div class="leave-stat-row" data-node-id="242:6093">
+                <span class="leave-stat-label" data-node-id="242:6094">Leaves remaining</span>
+                <span class="leave-stat-value" id="annual-remaining">21 days</span>
+              </div>
+              <div class="leave-divider" data-node-id="242:6096"></div>
+              <div class="leave-stat-row" data-node-id="242:6097">
+                <span class="leave-stat-label" data-node-id="242:6098">Total annual leaves</span>
+                <span class="leave-stat-value" id="annual-total">21 days</span>
+              </div>
+            </div>
+            <div class="leave-progress-bar" data-node-id="242:6100">
+              <div class="progress-bar-fill" style="width: 33.33%; background: #FBC372;"></div>
+            </div>
+          </div>
+
+          <!-- Sick Leave Card -->
+          <div class="card leave-balance-card" data-node-id="242:6105">
+            <h3 class="leave-type-title" data-node-id="242:6107">Sick</h3>
+            <div class="leave-balance-stats" data-node-id="242:6108">
+              <div class="leave-stat-row" data-node-id="242:6109">
+                <span class="leave-stat-label" data-node-id="242:6110">Leaves used</span>
+                <span class="leave-stat-value" id="sick-used">0 days</span>
+              </div>
+              <div class="leave-stat-row" data-node-id="242:6112">
+                <span class="leave-stat-label" data-node-id="242:6113">Leaves remaining</span>
+                <span class="leave-stat-value" id="sick-remaining">21 days</span>
+              </div>
+              <div class="leave-divider" data-node-id="242:6115"></div>
+              <div class="leave-stat-row" data-node-id="242:6116">
+                <span class="leave-stat-label" data-node-id="242:6117">Total sick leaves</span>
+                <span class="leave-stat-value" id="sick-total">21 days</span>
+              </div>
+            </div>
+            <div class="leave-progress-bar" data-node-id="242:6119">
+              <div class="progress-bar-fill" style="width: 33.33%; background: #EE7370;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leave History Section -->
+      <section class="leave-history-section" data-node-id="242:6124">
+        <h2 class="section-title" data-node-id="242:6126">Leave history</h2>
+        <div class="leave-history-container" data-node-id="242:6127">
+          
+          <!-- Calendar View Card -->
+          <div class="card calendar-view-card" data-node-id="242:6128">
+            <h3 class="card-title" data-node-id="242:6129">Calendar view</h3>
+            <div class="calendar-container" data-node-id="242:6130">
+              <div class="calendar-wrapper" data-node-id="242:6131">
+                <div class="calendar" data-node-id="242:6132">
+                  <div class="calendar-header-nav">
+                    <button class="calendar-nav-btn prev">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M20 24L12 16L20 8" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <div class="calendar-month-year">
+                      <span class="calendar-month-text">JAN</span>
+                      <span class="calendar-year-text">2026</span>
+                    </div>
+                    <button class="calendar-nav-btn next">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M12 24L20 16L12 8" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="calendar-grid-container">
+                    <div class="calendar-weekdays">
+                      <div class="calendar-day-header"><span>Mon</span></div>
+                      <div class="calendar-day-header"><span>Tue</span></div>
+                      <div class="calendar-day-header"><span>Wed</span></div>
+                      <div class="calendar-day-header"><span>Thu</span></div>
+                      <div class="calendar-day-header"><span>Fri</span></div>
+                      <div class="calendar-day-header"><span>Sat</span></div>
+                      <div class="calendar-day-header"><span>Sun</span></div>
+                    </div>
+                    <div class="calendar-days-grid">
+                      <div class="calendar-day-empty"></div>
+                      <div class="calendar-day-empty"></div>
+                      <div class="calendar-day-empty"></div>
+                      <div class="calendar-day marked">
+                        <span>1</span>
+                        <div class="calendar-day-circle"></div>
+                      </div>
+                      <div class="calendar-day marked">
+                        <span>2</span>
+                        <div class="calendar-day-circle"></div>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>3</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>4</span>
+                      </div>
+                      <div class="calendar-day today">
+                        <span>5</span>
+                        <div class="calendar-day-dot"></div>
+                      </div>
+                      <div class="calendar-day">
+                        <span>6</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>7</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>8</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>9</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>10</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>11</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>12</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>13</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>14</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>15</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>16</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>17</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>18</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>19</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>20</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>21</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>22</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>23</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>24</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>25</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>26</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>27</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>28</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>29</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>30</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>31</span>
+                      </div>
+                      <div class="calendar-day-empty"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-request-leave-calendar" data-node-id="242:6133">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2"/>
+                <path d="M12 8V16M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Request leave</span>
+            </button>
+          </div>
+
+          <!-- List View Card -->
+          <div class="card list-view-card" data-node-id="242:6134">
+            <div class="list-view-header" data-node-id="242:6135">
+              <h3 class="card-title" data-node-id="242:6136">My leave requests</h3>
+            </div>
+            
+            <!-- Filters -->
+            <div class="list-filters" data-node-id="242:6137">
+              <div class="filters-container" data-node-id="242:6138">
+                <span class="filters-label" data-node-id="242:6139">Quick filters:</span>
+                <div class="filter-controls" data-node-id="242:6140">
+                  <button class="filter-tag active" data-node-id="242:6142">All</button>
+                  <button class="filter-tag" data-node-id="242:6144">Casual</button>
+                  <button class="filter-tag" data-node-id="242:6146">Sick</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-container" data-node-id="242:6148">
+              <table class="leave-requests-table">
+                <colgroup>
+                  <col style="width: auto">
+                  <col style="width: 140px">
+                  <col style="width: 140px">
+                  <col style="width: 120px">
+                  <col style="width: 140px">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="table-header-cell table-col-leave-type">
+                      <span class="table-header-text">Leave type</span>
+                    </th>
+                    <th class="table-header-cell table-col-start-date">
+                      <span class="table-header-text">Start date</span>
+                    </th>
+                    <th class="table-header-cell table-col-end-date">
+                      <span class="table-header-text">End date</span>
+                    </th>
+                    <th class="table-header-cell table-col-days">
+                      <span class="table-header-text">No. of days</span>
+                    </th>
+                    <th class="table-header-cell table-col-status">
+                      <span class="table-header-text">Approval status</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="leaveRequestsTableBody">
+                  <!-- Rows populated by JavaScript -->
+                </tbody>
+              </table>
+
+              <!-- Table Footer -->
+              <div class="table-footer" data-node-id="242:6363">
+                <div class="table-footer-left" data-node-id="242:6364">
+                  <div class="items-per-page-select" data-node-id="242:6365">
+                    <select class="footer-select">
+                      <option value="5">5</option>
+                      <option value="10">10</option>
+                      <option value="20">20</option>
+                    </select>
+                  </div>
+                  <span class="footer-text" data-node-id="242:6371">items per page</span>
+                  <span class="footer-separator" data-node-id="242:6372">|</span>
+                  <span class="footer-text" data-node-id="242:6373">Total 22 items</span>
+                </div>
+                <div class="pagination" data-node-id="242:6374">
+                  <button class="pagination-btn pagination-prev" disabled data-node-id="242:6375">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <path d="M20 24L12 16L20 8" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                  <button class="pagination-page active" data-node-id="242:6376">1</button>
+                  <button class="pagination-page" data-node-id="242:6377">2</button>
+                  <button class="pagination-page" data-node-id="242:6378">3</button>
+                  <button class="pagination-page" data-node-id="242:6379">4</button>
+                  <button class="pagination-page" data-node-id="242:6380">5</button>
+                  <button class="pagination-btn pagination-next" data-node-id="242:6383">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <path d="M12 24L20 16L12 8" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" data-node-id="242:6384">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <p class="footer-logo-main">
+            <span class="logo-text-main-where">Where</span><span class="logo-text-main-work">Work</span>
+          </p>
+          <p class="footer-logo-sub">
+            Track your hybrid schedule
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="studio-logo">
+          <span class="studio-logo-heart">♡</span>
+          <span class="studio-logo-text">
+            <span class="studio-logo-text-az">AZ</span>Design Studios
+          </span>
+        </div>
+        <span>|  ©️ 2026</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Request Leave Modal -->
+  <div class="modal-overlay" id="leaveRequestModal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="modal-content" data-node-id="242:7118">
+      <div class="modal-header" data-node-id="242:7119">
+        <h2 class="modal-title" id="modal-title" data-node-id="242:7120">Request Leave</h2>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal" data-node-id="242:7121">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <form class="modal-form" id="leaveRequestForm" data-node-id="242:7122">
+        <div class="modal-form-field" data-node-id="242:7123">
+          <label class="modal-form-label" for="modalLeaveType" data-node-id="I242:7123;2010:36776">Leave type</label>
+          <div class="modal-form-select-wrapper">
+            <select class="modal-form-select" id="modalLeaveType" name="leaveType" required>
+              <option value="">Select leave type</option>
+              <option value="casual" selected>Casual leave</option>
+              <option value="annual">Annual leave</option>
+              <option value="sick">Sick leave</option>
+              <option value="flexi">Flexi leave</option>
+            </select>
+            <div class="modal-form-select-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-field modal-form-date-group" data-node-id="242:7124">
+          <div class="modal-form-date-field" data-node-id="242:7125">
+            <label class="modal-form-label" for="modalStartDate" data-node-id="I242:7125;2010:36776">Start date</label>
+            <div class="modal-form-date-wrapper">
+              <input type="text" class="modal-form-date-input" id="modalStartDate" name="startDate" placeholder="DD/MM/YY" required>
+              <div class="modal-form-date-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M3 8H17M7 2V6M13 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal-form-date-field" data-node-id="242:7126">
+            <label class="modal-form-label" for="modalEndDate" data-node-id="I242:7126;2010:36776">End date</label>
+            <div class="modal-form-date-wrapper">
+              <input type="text" class="modal-form-date-input" id="modalEndDate" name="endDate" placeholder="DD/MM/YY" required>
+              <div class="modal-form-date-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M3 8H17M7 2V6M13 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-field" data-node-id="242:7127">
+          <label class="modal-form-label" for="modalReason" data-node-id="I242:7127;4094:22083">Reason</label>
+          <div class="modal-form-textarea-wrapper">
+            <textarea class="modal-form-textarea" id="modalReason" name="reason" placeholder="Reason for leave" rows="4" required></textarea>
+            <div class="modal-form-resize-handle">
+              <svg width="7" height="7" viewBox="0 0 7 7" fill="none">
+                <path d="M6 1L1 6M6 6L1 1" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-buttons" data-node-id="242:7128">
+          <button type="button" class="modal-btn-cancel" id="modalCancelBtn" data-node-id="242:7129">Cancel</button>
+          <button type="submit" class="modal-btn-submit" id="modalSubmitBtn" data-node-id="242:7130">Request leave</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/state.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/leaves.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* CSS Variables from Figma Design Tokens - EXACT VALUES ONLY */
+
+:root {
+  /* ============================================
+     COLORS - Exact from Figma Variables
+     ============================================ */
+  
+  /* Backgrounds */
+  --color-background-white: #FFFFFF;
+  --color-surface-subtle: #F8F9FB;
+  --color-surface-disabled: #EBEEF2;
+  --color-surface-default: #686295;
+  
+  /* Borders */
+  --color-border-default: #E1E5EB;
+  --color-border-disabled: #EBEEF2;
+  --color-border-darker: #707D8F;
+  --color-border-input: #6B6B6B;
+  
+  /* Text Colors */
+  --color-text-title: #1D2228;
+  --color-text-body: #373E48;
+  --color-text-subtitle: #707D8F;
+  --color-text-disabled: #B8C2D0;
+  --color-text-negative: #F8F9FB;
+  --color-text-label: #2A2A2A;
+  
+  /* Brand Colors */
+  --color-primary: #686295;
+  --color-primary-light: #77689B;
+  --color-accent: #E77479;
+  
+  /* Status Colors */
+  --color-status-badge: #7BADA3;
+  --color-success: #10B981;
+  --color-success-bg: #E6F4E5;
+  --color-success-text: #036C01;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+  
+  /* Chart Colors - Exact from Figma */
+  --color-chart-green: #7BADA3;
+  --color-chart-blue: #81A0D3;
+  --color-chart-orange: #FBC372;
+  --color-chart-red: #EE7370;
+  
+  /* ============================================
+     TYPOGRAPHY - Exact from Figma Text Styles
+     ============================================ */
+  
+  /* Font Families */
+  --font-family: 'Montserrat', sans-serif;
+  --font-family-nixie: 'Nixie One', sans-serif;
+  
+  /* H1/Regular - 48px / 56px / 400 */
+  --font-size-h1: 48px;
+  --font-line-height-h1: 56px;
+  --font-weight-h1: 400;
+  
+  /* H2/Regular - 40px / 48px / 400 */
+  --font-size-h2: 40px;
+  --font-line-height-h2: 48px;
+  --font-weight-h2: 400;
+  
+  /* H3/Regular - 32px / 40px / 400 */
+  --font-size-h3: 32px;
+  --font-line-height-h3: 40px;
+  --font-weight-h3: 400;
+  
+  /* H4/Regular - 24px / 28px / 400 */
+  --font-size-h4: 24px;
+  --font-line-height-h4: 28px;
+  --font-weight-h4: 400;
+  
+  /* H4/Medium - 24px / 28px / 500 */
+  --font-weight-h4-medium: 500;
+  
+  /* Headline/Regular - 20px / 24px / 400 */
+  --font-size-headline: 20px;
+  --font-line-height-headline: 24px;
+  --font-weight-headline: 400;
+  
+  /* Headline/Medium - 20px / 24px / 500 */
+  --font-weight-headline-medium: 500;
+  
+  /* Body/Regular - 16px / 24px / 400 */
+  --font-size-body: 16px;
+  --font-line-height-body: 24px;
+  --font-weight-body: 400;
+  
+  /* Body/Medium - 16px / 24px / 500 */
+  --font-weight-body-medium: 500;
+  
+  /* Subtitle/Regular - 14px / 21px / 400 */
+  --font-size-subtitle: 14px;
+  --font-line-height-subtitle: 21px;
+  --font-weight-subtitle: 400;
+  
+  /* Subtitle/Medium - 14px / 21px / 500 */
+  --font-weight-subtitle-medium: 500;
+  
+  /* Small - 12px / 12px / 400 */
+  --font-size-small: 12px;
+  --font-line-height-small: 12px;
+  --font-weight-small: 400;
+  
+  /* Letter Spacing */
+  --letter-spacing-subtitle: 0.28px;
+  --letter-spacing-small: 0.56px;
+  --letter-spacing-tiny: 0.64px;
+  --letter-spacing-logo: 0.9931px;
+  
+  /* ============================================
+     SPACING - Exact from Figma Auto-Layout
+     ============================================ */
+  
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  
+  /* ============================================
+     BORDER RADIUS - Exact from Figma
+     ============================================ */
+  
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+  --radius-44: 44px;
+  --radius-48: 48px;
+  --radius-60: 60px;
+  --radius-100: 100px;
+  --radius-180: 180px;
+  --radius-1000: 1000px;
+  
+  /* ============================================
+     SHADOWS & ELEVATION
+     ============================================ */
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+  
+  /* ============================================
+     LAYOUT
+     ============================================ */
+  
+  --container-max-width: 1440px;
+  --nav-height: 90px;
+  --footer-height: 90px;
+  
+  /* Table Grid Template - Single source of truth */
+  --table-grid-columns: minmax(180px, 1fr) 160px 160px 100px 120px 100px;
+}

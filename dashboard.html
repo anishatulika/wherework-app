@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhereWork - Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nixie+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <!-- Dashboard Screen - Root Container -->
+  <div class="dashboard-screen">
+    
+    <!-- Top Navigation -->
+    <nav class="top-navigation">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="https://www.figma.com/api/mcp/asset/133290d6-e0dd-45a8-a8bb-cc5284ebe6f4" alt="WhereWork Logo" width="32" height="30">
+        </div>
+        <div class="nav-tabs">
+          <a href="dashboard.html" class="nav-tab active">
+            <span>Dashboard</span>
+          </a>
+          <a href="leaves.html" class="nav-tab">
+            <span>Leaves</span>
+          </a>
+          <a href="rewards.html" class="nav-tab">
+            <span>Rewards</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="btn-request-leave" id="requestLeaveBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2"/>
+            <path d="M12 8V16M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Request leave</span>
+        </button>
+        <div class="avatar">
+          <span>JH</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- Page Header: Greeting Section -->
+      <section class="page-header">
+        <div class="page-header-content">
+          <div class="page-header-left">
+            <h1 class="page-title">
+              Hi <span class="name-highlight">Jane</span>,
+            </h1>
+            <p class="page-subtitle">
+              Welcome to your WhereWork dashboard.
+            </p>
+          </div>
+          <div class="page-header-right">
+            <!-- Time / Location Card -->
+            <div class="time-location-card">
+              <div class="time-location-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" stroke="#77689B" stroke-width="2"/>
+                  <path d="M12 6V12L16 14" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Currently in Bengaluru, India</span>
+              </div>
+              <div class="time-location-body">
+                <div class="time">10:00 AM</div>
+                <div class="date">5 January 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Overview Section -->
+      <section class="overview-section">
+        <h2 class="section-title">Overview</h2>
+        <div class="overview-container">
+          
+          <!-- Left Column: Two stacked cards -->
+          <div class="overview-left-column">
+            
+            <!-- Top Card: "In office today" -->
+            <div class="card status-card">
+              <div class="status-card-content">
+                <div class="status-badge">
+                  <span>In office today</span>
+                </div>
+                <div class="status-text-content">
+                  <h3 class="status-title">
+                    Awesome! You reached your goal for the week.
+                  </h3>
+                  <p class="status-text">
+                    Work from anywhere for the rest of the week, or keep the momentum going.
+                  </p>
+                </div>
+              </div>
+              <div class="status-illustration">
+                <img src="https://www.figma.com/api/mcp/asset/4ca66436-b241-4334-bfff-af669c29f2c4" alt="Illustration" width="186" height="184">
+              </div>
+            </div>
+
+            <!-- Bottom Card: "Attendance this week" -->
+            <div class="card attendance-week-card">
+              <div class="attendance-week-card-content">
+                <h3 class="card-title">Attendance this week</h3>
+                <div class="attendance-week-stats">
+                  <div class="attendance-week-stat-item">
+                    <div class="attendance-week-stat-header">
+                      <span class="attendance-week-stat-value">3</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 21H21M5 21V7L12 3L19 7V21M9 9V21M15 9V21" stroke="#EE7370" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="attendance-week-stat-details">
+                      <p class="attendance-week-stat-label">Office days</p>
+                      <p class="attendance-week-stat-sublabel">Required: 3 days</p>
+                    </div>
+                  </div>
+                  <div class="attendance-week-stat-item">
+                    <div class="attendance-week-stat-header">
+                      <span class="attendance-week-stat-value">1</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#EE7370" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 22V12H15V22" stroke="#EE7370" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="attendance-week-stat-details">
+                      <p class="attendance-week-stat-label">WFA day</p>
+                      <p class="attendance-week-stat-sublabel">Required: 2 days</p>
+                    </div>
+                  </div>
+                  <div class="attendance-week-stat-item">
+                    <div class="attendance-week-stat-header">
+                      <span class="attendance-week-stat-value">0</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2C12 2 16 6 16 10C16 14 13 16 13 16M12 2C12 2 8 6 8 10C8 14 11 16 11 16M12 2C10 4 9 7 9 10C9 13.314 11.686 16 15 16C18.314 16 21 13.314 21 10C21 7 20 4 18 2" stroke="#EE7370" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="attendance-week-stat-details">
+                      <p class="attendance-week-stat-label">Leaves</p>
+                      <p class="attendance-week-stat-sublabel">Total: 47 leaves</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="attendance-week-footer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2C12 2 16 6 16 10C16 14 13 16 13 16M12 2C12 2 8 6 8 10C8 14 11 16 11 16M12 2C10 4 9 7 9 10C9 13.314 11.686 16 15 16C18.314 16 21 13.314 21 10C21 7 20 4 18 2" stroke="#686295" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>
+                  <strong>6 day</strong> streak. You're on fire!
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle Card: Calendar View -->
+          <div class="card calendar-card">
+            <h3 class="card-title">Calendar view</h3>
+            <div class="calendar-container">
+              <div class="calendar-wrapper">
+                <div class="calendar">
+                  <div class="calendar-header-nav">
+                    <button class="calendar-nav-btn prev">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M20 24L12 16L20 8" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <div class="calendar-month-year">
+                      <span class="calendar-month-text">JAN</span>
+                      <span class="calendar-year-text">2026</span>
+                    </div>
+                    <button class="calendar-nav-btn next">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M12 24L20 16L12 8" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="calendar-grid-container">
+                    <div class="calendar-weekdays">
+                      <div class="calendar-day-header"><span>Mon</span></div>
+                      <div class="calendar-day-header"><span>Tue</span></div>
+                      <div class="calendar-day-header"><span>Wed</span></div>
+                      <div class="calendar-day-header"><span>Thu</span></div>
+                      <div class="calendar-day-header"><span>Fri</span></div>
+                      <div class="calendar-day-header"><span>Sat</span></div>
+                      <div class="calendar-day-header"><span>Sun</span></div>
+                    </div>
+                    <div class="calendar-days-grid">
+                      <div class="calendar-day-empty"></div>
+                      <div class="calendar-day-empty"></div>
+                      <div class="calendar-day-empty"></div>
+                      <div class="calendar-day marked">
+                        <span>1</span>
+                        <div class="calendar-day-circle"></div>
+                      </div>
+                      <div class="calendar-day marked">
+                        <span>2</span>
+                        <div class="calendar-day-circle"></div>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>3</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>4</span>
+                      </div>
+                      <div class="calendar-day today">
+                        <span>5</span>
+                        <div class="calendar-day-dot"></div>
+                      </div>
+                      <div class="calendar-day">
+                        <span>6</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>7</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>8</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>9</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>10</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>11</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>12</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>13</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>14</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>15</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>16</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>17</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>18</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>19</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>20</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>21</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>22</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>23</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>24</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>25</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>26</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>27</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>28</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>29</span>
+                      </div>
+                      <div class="calendar-day">
+                        <span>30</span>
+                      </div>
+                      <div class="calendar-day disabled">
+                        <span>31</span>
+                      </div>
+                      <div class="calendar-day-empty"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar-actions">
+                  <button class="btn-mark-office">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" stroke-width="2"/>
+                      <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2"/>
+                      <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <span>Mark as office day</span>
+                  </button>
+                  <button class="btn-request-leave-calendar">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <rect x="3" y="4" width="18" height="18" rx="2" stroke="#686295" stroke-width="2"/>
+                      <path d="M16 2V6M8 2V6M3 10H21" stroke="#686295" stroke-width="2"/>
+                    </svg>
+                    <span>Request leave</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Card: Attendance This Month -->
+          <div class="card attendance-month-card">
+            <div class="attendance-month-header">
+              <h3 class="card-title">Attendance this month</h3>
+            </div>
+            <div class="attendance-month-content">
+              <div class="donut-chart-container">
+                <svg class="donut-chart" width="224" height="224" viewBox="0 0 224 224" id="attendanceDonutChart">
+                  <!-- Background circle -->
+                  <circle cx="112" cy="112" r="100" fill="none" stroke="#E1E5EB" stroke-width="24"/>
+                  <!-- Segments will be rendered dynamically -->
+                </svg>
+                <div class="donut-chart-center">
+                  <span class="donut-value" id="donutTotalValue">0</span>
+                  <span class="donut-label" id="donutTotalLabel">/0 days</span>
+                </div>
+              </div>
+              <div class="donut-legend" id="donutLegend">
+                <!-- Legend items will be rendered dynamically -->
+              </div>
+            </div>
+            <div class="attendance-tip">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8 21H16M8 21C6.89543 21 6 20.1046 6 19V5C6 3.89543 6.89543 3 8 3H16C17.1046 3 18 3.89543 18 5V19C18 20.1046 17.1046 21 16 21M8 21C6.89543 21 6 20.1046 6 19M16 21C17.1046 21 18 20.1046 18 19M12 7V11M12 15V15.01" stroke="#686295" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>
+                Better than <strong>91.3%</strong> employees!
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leave Balances Section -->
+      <section class="leave-balances-section">
+        <h2 class="section-title">Leave balances</h2>
+        <div class="leave-balances-grid">
+          
+          <!-- Fixed Leave Card -->
+          <div class="leave-balance-card">
+            <div class="leave-balance-content">
+              <h3 class="leave-type">Fixed</h3>
+              <div class="leave-stats">
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Past state holidays</span>
+                  <span class="leave-stat-value">1 days</span>
+                </div>
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">State holidays remaining</span>
+                  <span class="leave-stat-value">5 days</span>
+                </div>
+                <div class="leave-divider"></div>
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Total fixed leaves</span>
+                  <span class="leave-stat-value">6 days</span>
+                </div>
+              </div>
+              <div class="leave-progress">
+                <div class="progress-bar" style="width: 16.67%; background: #7BADA3;"></div>
+              </div>
+            </div>
+            <div class="leave-info-footer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="#686295" stroke-width="2"/>
+                <path d="M12 16V12M12 8H12.01" stroke="#686295" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Expire on <strong>1 Jan 2026</strong></span>
+            </div>
+          </div>
+
+          <!-- Flexi Leave Card -->
+          <div class="leave-balance-card">
+            <div class="leave-balance-content">
+              <h3 class="leave-type">Flexi</h3>
+              <div class="leave-stats">
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Leaves used</span>
+                  <span class="leave-stat-value">6 days</span>
+                </div>
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Leaves remaining</span>
+                  <span class="leave-stat-value">1 day</span>
+                </div>
+                <div class="leave-divider"></div>
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Total flexi leaves</span>
+                  <span class="leave-stat-value">6 days</span>
+                </div>
+              </div>
+              <div class="leave-progress">
+                <div class="progress-bar" style="width: 100%; background: #81A0D3;"></div>
+              </div>
+            </div>
+            <div class="leave-info-footer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="#686295" stroke-width="2"/>
+                <path d="M12 16V12M12 8H12.01" stroke="#686295" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Expire on <strong>1 Jan 2026</strong></span>
+            </div>
+          </div>
+
+          <!-- Annual Leave Card -->
+          <div class="leave-balance-card">
+            <div class="leave-balance-content">
+              <h3 class="leave-type">Annual</h3>
+              <div class="leave-stats">
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Leaves used</span>
+                  <span class="leave-stat-value">7 days</span>
+                </div>
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Leaves remaining</span>
+                  <span class="leave-stat-value">20 days</span>
+                </div>
+                <div class="leave-divider"></div>
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Total annual leaves</span>
+                  <span class="leave-stat-value">27 days</span>
+                </div>
+              </div>
+              <div class="leave-progress">
+                <div class="progress-bar" style="width: 25.93%; background: #FBC372;"></div>
+              </div>
+            </div>
+            <div class="leave-info-footer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="#686295" stroke-width="2"/>
+                <path d="M12 16V12M12 8H12.01" stroke="#686295" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Expire on <strong>31 Mar 2026</strong></span>
+            </div>
+          </div>
+
+          <!-- Sick Leave Card -->
+          <div class="leave-balance-card">
+            <div class="leave-balance-content">
+              <h3 class="leave-type">Sick</h3>
+              <div class="leave-stats">
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Leaves used</span>
+                  <span class="leave-stat-value">7 days</span>
+                </div>
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Leaves remaining</span>
+                  <span class="leave-stat-value">4 days</span>
+                </div>
+                <div class="leave-divider"></div>
+                <div class="leave-stat-row">
+                  <span class="leave-stat-label">Total sick leaves</span>
+                  <span class="leave-stat-value">14 days</span>
+                </div>
+              </div>
+              <div class="leave-progress">
+                <div class="progress-bar" style="width: 50%; background: #EE7370;"></div>
+              </div>
+            </div>
+            <div class="leave-info-footer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="#686295" stroke-width="2"/>
+                <path d="M12 16V12M12 8H12.01" stroke="#686295" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Expire on <strong>31 Mar 2026</strong></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Activity Section -->
+      <section class="team-activity-section">
+        <h2 class="section-title">Team activity</h2>
+        <div class="team-activity-container">
+          <div class="table-container">
+            
+            <!-- Filters -->
+            <div class="table-filters">
+              <div class="filters-left">
+                <span class="filter-label">Quick filters:</span>
+                <div class="filter-group">
+                  <button class="filter-tag active">All</button>
+                  <button class="filter-tag">Casual</button>
+                  <button class="filter-tag">Sick</button>
+                </div>
+              </div>
+              <div class="filters-right">
+                <button class="filter-tag active">Weekly</button>
+                <button class="filter-tag">Monthly</button>
+                <button class="filter-tag">Quarterly</button>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <!-- Table -->
+<div class="table-wrapper">
+  <table class="team-activity-table">
+    <colgroup>
+      <col style="width:24%">
+      <col style="width:14%">
+      <col style="width:14%">
+      <col style="width:14%">
+      <col style="width:14%">
+      <col style="width:20%">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th class="table-col-name">Name</th>
+        <th class="table-col-leave-type">Leave type</th>
+        <th class="table-col-start-date">Start date</th>
+        <th class="table-col-end-date">End date</th>
+        <th class="table-col-days">No. of days</th>
+        <th class="table-col-status">Status</th>
+      </tr>
+    </thead>
+
+    <tbody id="teamActivityTableBody">
+      <!-- Rows populated by JavaScript -->
+    </tbody>
+  </table>
+</div>
+
+
+            <!-- Table Footer / Pagination -->
+            <div class="table-footer">
+              <div class="pagination-left">
+                <select class="form-select">
+                  <option>5</option>
+                  <option>10</option>
+                  <option>20</option>
+                </select>
+                <span>items per page</span>
+                <span>|</span>
+                <span>Total 22 items</span>
+              </div>
+              <div class="pagination-container">
+                <button class="pagination-chevron prev" disabled style="opacity: 0;">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M20 24L12 16L20 8" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">4</button>
+                <button class="pagination-btn">5</button>
+                <button class="pagination-chevron next">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M12 24L20 16L12 8" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <p class="footer-logo-main">
+            <span class="logo-text-main-where">Where</span><span class="logo-text-main-work">Work</span>
+          </p>
+          <p class="footer-logo-sub">
+            Track your hybrid schedule
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="studio-logo">
+          <span class="studio-logo-heart">♡</span>
+          <span class="studio-logo-text">
+            <span class="studio-logo-text-az">AZ</span>Design Studios
+          </span>
+        </div>
+        <span>|  ©️ 2026</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Request Leave Modal -->
+  <div class="modal-overlay" id="leaveRequestModal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="modal-content" data-node-id="242:7118">
+      <div class="modal-header" data-node-id="242:7119">
+        <h2 class="modal-title" id="modal-title" data-node-id="242:7120">Request Leave</h2>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal" data-node-id="242:7121">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <form class="modal-form" id="leaveRequestForm" data-node-id="242:7122">
+        <div class="modal-form-field" data-node-id="242:7123">
+          <label class="modal-form-label" for="modalLeaveType" data-node-id="I242:7123;2010:36776">Leave type</label>
+          <div class="modal-form-select-wrapper">
+            <select class="modal-form-select" id="modalLeaveType" name="leaveType" required>
+              <option value="">Select leave type</option>
+              <option value="casual" selected>Casual leave</option>
+              <option value="annual">Annual leave</option>
+              <option value="sick">Sick leave</option>
+              <option value="flexi">Flexi leave</option>
+            </select>
+            <div class="modal-form-select-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-field modal-form-date-group" data-node-id="242:7124">
+          <div class="modal-form-date-field" data-node-id="242:7125">
+            <label class="modal-form-label" for="modalStartDate" data-node-id="I242:7125;2010:36776">Start date</label>
+            <div class="modal-form-date-wrapper">
+              <input type="text" class="modal-form-date-input" id="modalStartDate" name="startDate" placeholder="DD/MM/YY" required>
+              <div class="modal-form-date-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M3 8H17M7 2V6M13 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal-form-date-field" data-node-id="242:7126">
+            <label class="modal-form-label" for="modalEndDate" data-node-id="I242:7126;2010:36776">End date</label>
+            <div class="modal-form-date-wrapper">
+              <input type="text" class="modal-form-date-input" id="modalEndDate" name="endDate" placeholder="DD/MM/YY" required>
+              <div class="modal-form-date-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M3 8H17M7 2V6M13 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-field" data-node-id="242:7127">
+          <label class="modal-form-label" for="modalReason" data-node-id="I242:7127;4094:22083">Reason</label>
+          <div class="modal-form-textarea-wrapper">
+            <textarea class="modal-form-textarea" id="modalReason" name="reason" placeholder="Reason for leave" rows="4" required></textarea>
+            <div class="modal-form-resize-handle">
+              <svg width="7" height="7" viewBox="0 0 7 7" fill="none">
+                <path d="M6 1L1 6M6 6L1 1" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-buttons" data-node-id="242:7128">
+          <button type="button" class="modal-btn-cancel" id="modalCancelBtn" data-node-id="242:7129">Cancel</button>
+          <button type="submit" class="modal-btn-submit" id="modalSubmitBtn" data-node-id="242:7130">Request leave</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/state.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhereWork - Rewards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nixie+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/rewards.css">
+</head>
+<body>
+  <!-- Rewards Screen -->
+  <div class="rewards-screen" data-node-id="242:6385">
+    
+    <!-- Top Navigation -->
+    <nav class="top-navigation" data-node-id="242:6386">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="https://www.figma.com/api/mcp/asset/133290d6-e0dd-45a8-a8bb-cc5284ebe6f4" alt="WhereWork Logo" width="32" height="30">
+        </div>
+        <div class="nav-tabs">
+          <a href="dashboard.html" class="nav-tab" data-node-id="I228:18672;119:4428">
+            <span>Dashboard</span>
+          </a>
+          <a href="leaves.html" class="nav-tab" data-node-id="I228:18673;119:4428">
+            <span>Leaves</span>
+          </a>
+          <a href="rewards.html" class="nav-tab active" data-node-id="I228:18674;119:4438">
+            <span>Rewards</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <button class="btn-request-leave" id="requestLeaveBtn" data-node-id="228:18676">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2"/>
+            <path d="M12 8V16M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Request leave</span>
+        </button>
+        <div class="avatar" data-node-id="126:2645">
+          <span>JH</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      
+      <!-- Page Header -->
+      <section class="page-header" data-node-id="242:6387">
+        <div class="page-header-content">
+          <div class="page-header-left" data-node-id="242:6388">
+            <h1 class="page-title" data-node-id="242:6389">Rewards</h1>
+            <p class="page-subtitle" data-node-id="242:6390">
+              Keep track of your time off and understand how it affects your hybrid work pattern.
+            </p>
+          </div>
+          <div class="page-header-right" data-node-id="242:6391">
+            <div class="time-location-card">
+              <div class="time-location-header" data-node-id="242:6392">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" data-node-id="242:6393">
+                  <circle cx="12" cy="12" r="10" stroke="#77689B" stroke-width="2"/>
+                  <path d="M12 6V12L16 14" stroke="#77689B" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span data-node-id="242:6394">Currently in Bengaluru, India</span>
+              </div>
+              <div class="time-location-body" data-node-id="242:6395">
+                <div class="time" data-node-id="242:6396">10:00 AM</div>
+                <div class="date" data-node-id="242:6397">5 January 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leaderboard Section -->
+      <section class="leaderboard-section" data-node-id="242:6398">
+        <h2 class="section-title">Leaderboard</h2>
+        
+        <!-- Top 3 Leaderboard Cards -->
+        <div class="leaderboard-top-three">
+          <div class="leaderboard-card rank-1">
+            <div class="rank-badge rank-1-badge" aria-label="Rank 1">
+              <span class="rank-icon">🥇</span>
+            </div>
+            <div class="leaderboard-avatar">
+              <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Chen" class="avatar-circle avatar-large" />
+            </div>
+            <div class="leaderboard-info">
+              <h3 class="leaderboard-name">Sarah Chen</h3>
+              <p class="leaderboard-days">14 office days</p>
+              <p class="leaderboard-points">1,250 points</p>
+            </div>
+          </div>
+
+          <div class="leaderboard-card rank-2">
+            <div class="rank-badge rank-2-badge" aria-label="Rank 2">
+              <span class="rank-icon">🥈</span>
+            </div>
+            <div class="leaderboard-avatar">
+              <img src="https://i.pravatar.cc/150?img=2" alt="Michael Park" class="avatar-circle avatar-medium" />
+            </div>
+            <div class="leaderboard-info">
+              <h3 class="leaderboard-name">Michael Park</h3>
+              <p class="leaderboard-days">12 office days</p>
+              <p class="leaderboard-points">1,100 points</p>
+            </div>
+          </div>
+
+          <div class="leaderboard-card rank-3">
+            <div class="rank-badge rank-3-badge" aria-label="Rank 3">
+              <span class="rank-icon">🥉</span>
+            </div>
+            <div class="leaderboard-avatar">
+              <img src="https://i.pravatar.cc/150?img=3" alt="Emma Wilson" class="avatar-circle avatar-standard" />
+            </div>
+            <div class="leaderboard-info">
+              <h3 class="leaderboard-name">Emma Wilson</h3>
+              <p class="leaderboard-days">10 office days</p>
+              <p class="leaderboard-points">950 points</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Remaining Leaderboard List -->
+        <div class="leaderboard-list">
+          <div class="leaderboard-list-item">
+            <div class="list-rank" aria-label="Rank 4">4</div>
+            <div class="list-avatar">
+              <img src="https://i.pravatar.cc/150?img=4" alt="David Lee" class="avatar-circle-small" />
+            </div>
+            <div class="list-info">
+              <span class="list-name">David Lee</span>
+              <span class="list-days">8 office days</span>
+            </div>
+            <div class="list-points">780 points</div>
+          </div>
+
+          <div class="leaderboard-list-item">
+            <div class="list-rank" aria-label="Rank 5">5</div>
+            <div class="list-avatar">
+              <img src="https://i.pravatar.cc/150?img=5" alt="Lisa Brown" class="avatar-circle-small" />
+            </div>
+            <div class="list-info">
+              <span class="list-name">Lisa Brown</span>
+              <span class="list-days">7 office days</span>
+            </div>
+            <div class="list-points">650 points</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Your Position Summary Section -->
+      <section class="your-position-section">
+        <div class="position-card">
+          <div class="position-content">
+            <h2 class="position-title">Your position</h2>
+            <div class="position-stats">
+              <div class="position-stat">
+                <span class="stat-label">0 Office days</span>
+              </div>
+              <div class="position-stat">
+                <span class="stat-label">0 Week streak</span>
+              </div>
+              <div class="position-stat">
+                <span class="stat-value">420 Total points</span>
+              </div>
+            </div>
+            <p class="position-message">You're climbing the ranks! Keep it up ✨</p>
+          </div>
+          <div class="position-rank">
+            <span class="rank-number">#8</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Available Rewards Grid Section -->
+      <section class="available-rewards-section">
+        <h2 class="section-title">Available rewards</h2>
+        <div class="rewards-grid">
+          
+          <!-- Reward Card 1: Amazon voucher -->
+          <div class="reward-card">
+            <div class="reward-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="8" fill="#FFE5E5"/>
+                <path d="M24 12 L28 20 L36 20 L30 26 L32 34 L24 28 L16 34 L18 26 L12 20 L20 20 Z" fill="#E77479"/>
+              </svg>
+            </div>
+            <div class="reward-info">
+              <h3 class="reward-name">Amazon voucher</h3>
+              <p class="reward-points">500 points</p>
+            </div>
+            <button class="btn-redeem" data-points="500">Redeem</button>
+          </div>
+
+          <!-- Reward Card 2: Coffee shop gift card -->
+          <div class="reward-card">
+            <div class="reward-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="8" fill="#E5F0FF"/>
+                <path d="M16 20 L32 20 L32 28 C32 32 28 36 24 36 C20 36 16 32 16 28 Z" fill="#686295"/>
+                <path d="M20 16 L28 16 L28 20 L20 20 Z" fill="#686295"/>
+              </svg>
+            </div>
+            <div class="reward-info">
+              <h3 class="reward-name">Coffee shop gift card</h3>
+              <p class="reward-points">300 points</p>
+            </div>
+            <button class="btn-redeem" data-points="300">Redeem</button>
+          </div>
+
+          <!-- Reward Card 3: Extra day off -->
+          <div class="reward-card">
+            <div class="reward-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="8" fill="#F5F5F5"/>
+                <rect x="12" y="12" width="24" height="24" rx="4" stroke="#B8C2D0" stroke-width="2" fill="none"/>
+                <path d="M20 20 L24 24 L28 20" stroke="#B8C2D0" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="reward-info">
+              <h3 class="reward-name">Extra day off</h3>
+              <p class="reward-points">1000 points</p>
+            </div>
+            <button class="btn-redeem disabled" data-points="1000" disabled>Redeem</button>
+          </div>
+
+          <!-- Reward Card 4: Lunch voucher -->
+          <div class="reward-card">
+            <div class="reward-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="8" fill="#FFF5E5"/>
+                <path d="M16 24 L20 28 L24 24 L28 28 L32 24" stroke="#E77479" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 16 L20 24 M28 16 L28 24" stroke="#E77479" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="reward-info">
+              <h3 class="reward-name">Lunch voucher</h3>
+              <p class="reward-points">200 points</p>
+            </div>
+            <button class="btn-redeem" data-points="200">Redeem</button>
+          </div>
+
+          <!-- Reward Card 5: Book store credit -->
+          <div class="reward-card">
+            <div class="reward-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="8" fill="#E5F5E5"/>
+                <rect x="14" y="16" width="20" height="16" rx="2" fill="#7BADA3" fill-opacity="0.3"/>
+                <path d="M14 20 L34 20 M14 24 L34 24 M14 28 L34 28" stroke="#7BADA3" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="reward-info">
+              <h3 class="reward-name">Book store credit</h3>
+              <p class="reward-points">400 points</p>
+            </div>
+            <button class="btn-redeem" data-points="400">Redeem</button>
+          </div>
+
+          <!-- Reward Card 6: Wellness session -->
+          <div class="reward-card">
+            <div class="reward-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="8" fill="#F5F5F5"/>
+                <circle cx="24" cy="24" r="12" stroke="#B8C2D0" stroke-width="2" fill="none"/>
+                <circle cx="24" cy="24" r="6" fill="#B8C2D0"/>
+              </svg>
+            </div>
+            <div class="reward-info">
+              <h3 class="reward-name">Wellness session</h3>
+              <p class="reward-points">600 points</p>
+            </div>
+            <button class="btn-redeem disabled" data-points="600" disabled>Redeem</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" data-node-id="242:6406">
+      <div class="footer-left">
+        <div class="footer-logo" data-node-id="I242:6406;228:3872">
+          <p class="footer-logo-main" data-node-id="I242:6406;228:3872;119:4257">
+            <span class="logo-text-main-where">Where</span><span class="logo-text-main-work">Work</span>
+          </p>
+          <p class="footer-logo-sub" data-node-id="I242:6406;228:3872;119:4258">
+            Track your hybrid schedule
+          </p>
+        </div>
+      </div>
+      <div class="footer-right" data-node-id="I242:6406;228:3880">
+        <div class="studio-logo">
+          <span class="studio-logo-heart">♡</span>
+          <span class="studio-logo-text">
+            <span class="studio-logo-text-az">AZ</span>Design Studios
+          </span>
+        </div>
+        <span>|  ©️ 2026</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Request Leave Modal -->
+  <div class="modal-overlay" id="leaveRequestModal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="modal-content" data-node-id="242:7118">
+      <div class="modal-header" data-node-id="242:7119">
+        <h2 class="modal-title" id="modal-title" data-node-id="242:7120">Request Leave</h2>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal" data-node-id="242:7121">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <form class="modal-form" id="leaveRequestForm" data-node-id="242:7122">
+        <div class="modal-form-field" data-node-id="242:7123">
+          <label class="modal-form-label" for="modalLeaveType" data-node-id="I242:7123;2010:36776">Leave type</label>
+          <div class="modal-form-select-wrapper">
+            <select class="modal-form-select" id="modalLeaveType" name="leaveType" required>
+              <option value="">Select leave type</option>
+              <option value="casual" selected>Casual leave</option>
+              <option value="annual">Annual leave</option>
+              <option value="sick">Sick leave</option>
+              <option value="flexi">Flexi leave</option>
+            </select>
+            <div class="modal-form-select-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-field modal-form-date-group" data-node-id="242:7124">
+          <div class="modal-form-date-field" data-node-id="242:7125">
+            <label class="modal-form-label" for="modalStartDate" data-node-id="I242:7125;2010:36776">Start date</label>
+            <div class="modal-form-date-wrapper">
+              <input type="text" class="modal-form-date-input" id="modalStartDate" name="startDate" placeholder="DD/MM/YY" required>
+              <div class="modal-form-date-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M3 8H17M7 2V6M13 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="modal-form-date-field" data-node-id="242:7126">
+            <label class="modal-form-label" for="modalEndDate" data-node-id="I242:7126;2010:36776">End date</label>
+            <div class="modal-form-date-wrapper">
+              <input type="text" class="modal-form-date-input" id="modalEndDate" name="endDate" placeholder="DD/MM/YY" required>
+              <div class="modal-form-date-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M3 8H17M7 2V6M13 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-field" data-node-id="242:7127">
+          <label class="modal-form-label" for="modalReason" data-node-id="I242:7127;4094:22083">Reason</label>
+          <div class="modal-form-textarea-wrapper">
+            <textarea class="modal-form-textarea" id="modalReason" name="reason" placeholder="Reason for leave" rows="4" required></textarea>
+            <div class="modal-form-resize-handle">
+              <svg width="7" height="7" viewBox="0 0 7 7" fill="none">
+                <path d="M6 1L1 6M6 6L1 1" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-buttons" data-node-id="242:7128">
+          <button type="button" class="modal-btn-cancel" id="modalCancelBtn" data-node-id="242:7129">Cancel</button>
+          <button type="submit" class="modal-btn-submit" id="modalSubmitBtn" data-node-id="242:7130">Request leave</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/state.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/rewards.js"></script>
+</body>
+</html>

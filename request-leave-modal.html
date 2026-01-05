@@ -1,0 +1,96 @@
+<!-- Request Leave Modal - Reusable Component -->
+<div class="modal-overlay" id="leaveRequestModal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+  <div class="modal-content" data-node-id="242:7118">
+    <!-- Modal Header -->
+    <div class="modal-header" data-node-id="242:7119">
+      <h2 class="modal-title" id="modal-title" data-node-id="242:7120">Request Leave</h2>
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal" data-node-id="242:7121">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Modal Form -->
+    <form class="modal-form" id="leaveRequestForm" data-node-id="242:7122">
+      
+      <!-- Leave Type Field -->
+      <div class="modal-form-field" data-node-id="242:7123">
+        <label class="modal-form-label" for="modalLeaveType" data-node-id="I242:7123;2010:36776">
+          Leave type
+        </label>
+        <div class="modal-form-select-wrapper">
+          <select class="modal-form-select" id="modalLeaveType" name="leaveType" required>
+            <option value="">Select leave type</option>
+            <option value="casual" selected>Casual leave</option>
+            <option value="annual">Annual leave</option>
+            <option value="sick">Sick leave</option>
+            <option value="flexi">Flexi leave</option>
+          </select>
+          <div class="modal-form-select-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Date Fields -->
+      <div class="modal-form-field modal-form-date-group" data-node-id="242:7124">
+        <div class="modal-form-date-field" data-node-id="242:7125">
+          <label class="modal-form-label" for="modalStartDate" data-node-id="I242:7125;2010:36776">
+            Start date
+          </label>
+          <div class="modal-form-date-wrapper">
+            <input type="text" class="modal-form-date-input" id="modalStartDate" name="startDate" placeholder="DD/MM/YY" required>
+            <div class="modal-form-date-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M3 8H17M7 2V6M13 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="modal-form-date-field" data-node-id="242:7126">
+          <label class="modal-form-label" for="modalEndDate" data-node-id="I242:7126;2010:36776">
+            End date
+          </label>
+          <div class="modal-form-date-wrapper">
+            <input type="text" class="modal-form-date-input" id="modalEndDate" name="endDate" placeholder="DD/MM/YY" required>
+            <div class="modal-form-date-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="3" y="4" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M3 8H17M7 2V6M13 2V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reason Field -->
+      <div class="modal-form-field" data-node-id="242:7127">
+        <label class="modal-form-label" for="modalReason" data-node-id="I242:7127;4094:22083">
+          Reason
+        </label>
+        <div class="modal-form-textarea-wrapper">
+          <textarea class="modal-form-textarea" id="modalReason" name="reason" placeholder="Reason for leave" rows="4"></textarea>
+          <div class="modal-form-resize-handle">
+            <svg width="7" height="7" viewBox="0 0 7 7" fill="none">
+              <path d="M6 1L1 6M6 6L1 1" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Buttons -->
+      <div class="modal-form-buttons" data-node-id="242:7128">
+        <button type="button" class="modal-btn-cancel" id="modalCancelBtn" data-node-id="242:7129">
+          Cancel
+        </button>
+        <button type="submit" class="modal-btn-submit" id="modalSubmitBtn" data-node-id="242:7130">
+          Request leave
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
